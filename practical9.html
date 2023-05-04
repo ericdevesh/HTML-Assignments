@@ -1,0 +1,22 @@
+<!--. Write a JavaScript program calculate the cube of the given number.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculate Cube</title>
+  <script type="text/javascript">
+    function calculateCube() {
+      var number = document.getElementById("number").value;
+      var cube = number * number * number;
+      document.getElementById("result").innerHTML = "The cube of " + number + " is " + cube;
+    }
+  </script>
+</head>
+<body>
+  <h1>Calculate Cube</h1>
+  <p>Enter a number to calculate its cube:</p>
+  <input type="number" id="number">
+  <button onclick="calculateCube()">Calculate</button>
+  <p id="result"></p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!-- Write a JavaScript program print the table of given number.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiplication Table</title>
+  <script type="text/javascript">
+    function printTable() {
+      var number = document.getElementById("number").value;
+      var table = "";
+      for (var i = 1; i <= 10; i++) {
+        var result = number * i;
+        table += number + " x " + i + " = " + result + "<br>";
+      }
+      document.getElementById("table").innerHTML = table;
+    }
+  </script>
+</head>
+<body>
+  <h1>Multiplication Table</h1>
+  <p>Enter a number to print its multiplication table:</p>
+  <input type="number" id="number">
+  <button onclick="printTable()">Print Table</button>
+  <p id="table"></p>
+</body>
+</html>
