@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculate Total Marks and Percentage</title>
+    <script>
+		function calculate() {
+			var subject1 = parseFloat(document.getElementById('subject1').value);
+			var subject2 = parseFloat(document.getElementById('subject2').value);
+			var subject3 = parseFloat(document.getElementById('subject3').value);
+			var subject4 = parseFloat(document.getElementById('subject4').value);
+			var subject5 = parseFloat(document.getElementById('subject5').value);
+			var total = subject1 + subject2 + subject3 + subject4 + subject5;
+			var percentage = (total/500)*100;
+			document.getElementById('total').value = total.toFixed(2);
+			document.getElementById('percentage').value = percentage.toFixed(2);
+		}
+	</script>
+</head>
+<body>
+	<h1>Enter Subject Marks</h1>
+	<label for="subject1">Subject 1: </label>
+	<input type="text" id="subject1" name="subject1" /><br/><br/>
+	<label for="subject2">Subject 2: </label>
+	<input type="text" id="subject2" name="subject2" /><br/><br/>
+	<label for="subject3">Subject 3: </label>
+	<input type="text" id="subject3" name="subject3" /><br/><br/>
+	<label for="subject4">Subject 4: </label>
+	<input type="text" id="subject4" name="subject4" /><br/><br/>
+	<label for="subject5">Subject 5: </label>
+	<input type="text" id="subject5" name="subject5" /><br/><br/>
+	<button onclick="calculate()">Calculate Total Marks and Percentage</button><br/><br/>
+	<label for="total">Total Marks: </label>
+	<input type="text" id="total" name="total" /><br/><br/>
+	<label for="percentage">Percentage: </label>
+	<input type="text" id="percentage" name="percentage" /><br/><br/>
+</body>
+</html>

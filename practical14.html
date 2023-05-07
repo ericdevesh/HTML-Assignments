@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exchange Textbox Values</title>
+	<script>
+		function exchangeValues() {
+			// Get the values of the two textboxes
+			let textbox1Value = document.getElementById("textbox1").value;
+			let textbox2Value = document.getElementById("textbox2").value;
+			
+			// Exchange the values of the two textboxes
+			document.getElementById("textbox1").value = textbox2Value;
+			document.getElementById("textbox2").value = textbox1Value;
+		}
+	</script>
+</head>
+<body>
+	<label for="textbox1">Textbox 1:</label>
+	<input type="text" id="textbox1"><br><br>
+	
+	<label for="textbox2">Textbox 2:</label>
+	<input type="text" id="textbox2"><br><br>
+	
+	<button onclick="exchangeValues()">Exchange Values</button>
+</body>
+</html>
